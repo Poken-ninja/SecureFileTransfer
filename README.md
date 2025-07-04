@@ -68,38 +68,34 @@ pip install pycryptodome
 
 🧪 2. Create a Virtual Environment
 bash
-Copy
-Edit
+
 python -m venv venv
 ▶️ Activate the venv
 Windows:
 
 bash
-Copy
-Edit
+
+
 .\venv\Scripts\activate
+
 Mac/Linux:
 
 bash
-Copy
-Edit
+
 source venv/bin/activate
 📥 3. Install Dependencies
 bash
-Copy
-Edit
+
 pip install -r requirements.txt
 🔄 Update Dependencies
 Anytime you install new packages:
 
 bash
-Copy
-Edit
+
 pip freeze > requirements.txt
 📁 Project Structure
 pgsql
-Copy
-Edit
+
 SecureFileTransfer/
 ├── encrypt.py
 ├── decrypt.py (coming soon)
