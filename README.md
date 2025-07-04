@@ -110,6 +110,25 @@ SecureFileTransfer/
 
 ✅ Always activate your virtual environment before running scripts
 
+#ENCRYPTION
+
+📚 Libraries Used
+Library	Purpose	Why We Use It
+pycryptodome	Provides cryptographic algorithms like AES, RSA, etc.	Used to encrypt/decrypt files securely using AES (Crypto.Cipher.AES)
+hashlib	Built-in module for secure hashing algorithms (SHA256, MD5, etc.)	Helps generate a strong encryption key from a password (e.g., using SHA-256)
+os	Built-in module to interact with the operating system	Used to access files, check paths, create folders, etc.
+os.path	Part of os module to work with file paths	Helps check if a file exists, join folder/file paths safely
+pychalk	Adds colors to terminal output (like chalk in JavaScript)	Makes console messages more readable and visually clear (e.g., green for success, red for error)
+
+🧠 Example Use:
+python
+Copy
+Edit
+from Crypto.Cipher import AES
+import hashlib
+import os
+from pychalk import chalk
+
 🔁 Use pip freeze > requirements.txt after changes
 
 📚 Requirements
