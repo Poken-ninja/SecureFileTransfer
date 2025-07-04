@@ -1,3 +1,31 @@
+# 🔐 Secure File Transfer System
+
+This project securely encrypts and transfers files using a **hybrid cryptographic approach** combining **AES (symmetric)** and **RSA (asymmetric)** algorithms.
+
+![Python Version](https://img.shields.io/badge/Python-3.12-blue)
+![Library](https://img.shields.io/badge/PyCryptodome-✅-green)
+![License](https://img.shields.io/badge/Status-Active-brightgreen)
+
+---
+
+## 📦 Features
+
+- 🔒 AES file encryption using `PyCryptodome` (EAX mode)
+- 🔑 RSA public key encryption for secure AES key sharing (coming soon)
+- 💼 Clean virtual environment setup
+- 🧑‍🤝‍🧑 Team-friendly with `requirements.txt` and `.gitignore`
+
+---
+
+## ⚙️ Setup Instructions
+
+### 🧰 1. Clone the Repository
+
+```bash
+git clone https://github.com/Poken-ninja/SecureFileTransfer.git
+cd SecureFileTransfer
+
+
 # 🔐 Secure File Transfer System (AES + RSA)
 
 This project demonstrates a **hybrid encryption model** using **AES (symmetric)** and **RSA (asymmetric)** encryption techniques to securely encrypt and transfer files.
@@ -37,3 +65,58 @@ Implement basic AES encryption in Python using `pycryptodome`.
 ### 📦 Requirements:
 ```bash
 pip install pycryptodome
+
+🧪 2. Create a Virtual Environment
+bash
+Copy
+Edit
+python -m venv venv
+▶️ Activate the venv
+Windows:
+
+bash
+Copy
+Edit
+.\venv\Scripts\activate
+Mac/Linux:
+
+bash
+Copy
+Edit
+source venv/bin/activate
+📥 3. Install Dependencies
+bash
+Copy
+Edit
+pip install -r requirements.txt
+🔄 Update Dependencies
+Anytime you install new packages:
+
+bash
+Copy
+Edit
+pip freeze > requirements.txt
+📁 Project Structure
+pgsql
+Copy
+Edit
+SecureFileTransfer/
+├── encrypt.py
+├── decrypt.py (coming soon)
+├── key.bin
+├── encrypted.bin
+├── myfile.txt
+├── requirements.txt
+├── .gitignore
+└── README.md
+🤝 Team Notes
+❗ Don’t upload venv/ to GitHub
+
+✅ Always activate your virtual environment before running scripts
+
+🔁 Use pip freeze > requirements.txt after changes
+
+📚 Requirements
+Python 3.12+
+
+pycryptodome library
