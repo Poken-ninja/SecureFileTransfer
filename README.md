@@ -12,7 +12,7 @@ This project demonstrates a **hybrid encryption model** using **AES (symmetric)*
 ## 📦 Features
 
 - 🔒 AES file encryption using `PyCryptodome` (EAX mode)
-- 🔑 RSA public key encryption for secure AES key sharing *(coming soon)*
+- 🔑 RSA public key encryption for secure AES key sharing _(coming soon)_
 - 🧪 Password strength checker before key generation
 - 📄 Automatic encryption logs to `encryption_log.txt`
 - 🗂️ Backup original files before overwriting
@@ -25,12 +25,14 @@ This project demonstrates a **hybrid encryption model** using **AES (symmetric)*
 ## ⚙️ Setup Instructions
 
 ### 1️⃣ Clone the Repository
+
 ```bash
 git clone https://github.com/Poken-ninja/SecureFileTransfer.git
 cd SecureFileTransfer
 ```
 
 ### 2️⃣ Create & Activate Virtual Environment
+
 <details>
 <summary>🧪 Windows</summary>
 
@@ -38,6 +40,7 @@ cd SecureFileTransfer
 python -m venv venv
 .\venv\Scripts\activate
 ```
+
 </details>
 
 <details>
@@ -47,14 +50,17 @@ python -m venv venv
 python3 -m venv venv
 source venv/bin/activate
 ```
+
 </details>
 
 ### 3️⃣ Install Dependencies
+
 ```bash
 pip install -r requirements.txt
 ```
 
 ### 🔄 Update Requirements Anytime
+
 ```bash
 pip freeze > requirements.txt
 ```
@@ -62,6 +68,7 @@ pip freeze > requirements.txt
 ---
 
 ## 📁 Project Structure
+
 ```
 SecureFileTransfer/
 ├── main.py              # Main encryption/decryption logic
@@ -77,6 +84,7 @@ SecureFileTransfer/
 ## 🔐 Encryption Flow
 
 ### 🔁 Encrypt/Decrypt ALL files (batch mode)
+
 ```python
 encrypt_all_files()  # Encrypts all non-Python, non-.enc files
 
@@ -84,6 +92,7 @@ decrypt_all_files()  # Decrypts all .enc files
 ```
 
 ### 🧠 Smart Features
+
 - ✅ Password must be strong: min 8 chars, uppercase, lowercase, digit, special char
 - 📝 Every encryption/decryption is logged
 - 🔁 Automatic `.bak` backup before file overwrite
@@ -93,14 +102,14 @@ decrypt_all_files()  # Decrypts all .enc files
 
 ## 📚 Libraries Used
 
-| Library        | Purpose                                                      |
-|----------------|--------------------------------------------------------------|
-| `pycryptodome` | Cryptographic algorithms (AES, RSA)                          |
-| `hashlib`      | Generates a strong key from password using SHA256           |
-| `os`/`os.path` | File traversal, verification, and path joining              |
-| `colorama`     | Terminal output colorization                                |
-| `datetime`     | Timestamping logs                                           |
-| `re`           | Regex for password validation                               |
+| Library        | Purpose                                           |
+| -------------- | ------------------------------------------------- |
+| `pycryptodome` | Cryptographic algorithms (AES, RSA)               |
+| `hashlib`      | Generates a strong key from password using SHA256 |
+| `os`/`os.path` | File traversal, verification, and path joining    |
+| `colorama`     | Terminal output colorization                      |
+| `datetime`     | Timestamping logs                                 |
+| `re`           | Regex for password validation                     |
 
 ---
 
@@ -109,6 +118,7 @@ decrypt_all_files()  # Decrypts all .enc files
 This repo uses **GitHub Actions** to automatically check Python syntax on every push.
 
 ### 📄 `.github/workflows/python.yml`
+
 ```yaml
 name: Python Lint Check
 
@@ -122,7 +132,7 @@ jobs:
       - name: Set up Python
         uses: actions/setup-python@v4
         with:
-          python-version: '3.12'
+          python-version: "3.12"
 
       - name: Install dependencies
         run: |
@@ -135,6 +145,7 @@ jobs:
 ```
 
 Add this file at:
+
 ```
 SecureFileTransfer/.github/workflows/python.yml
 ```
@@ -148,14 +159,14 @@ SecureFileTransfer/.github/workflows/python.yml
 - 🧪 Run tests before pushing changes
 - 📋 Use descriptive commit messages
 
-
 ## 👥 Contributors
 
-- [**Poken-ninja**](https://github.com/Poken-ninja) – Project Lead  
+- [**Poken-ninja**](https://github.com/Poken-ninja) – Project Lead
 - [**RyJohn1**](https://github.com/RyJohn1) – Contributor
   with help from AI (ChatGPT) and Somnath Paul
 
 ---
 
 ## 📜 License
+
 MIT License – use freely with credit.
