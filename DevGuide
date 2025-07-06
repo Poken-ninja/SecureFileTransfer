@@ -50,7 +50,11 @@ source venv/bin/activate
 # 4. Install required packages
 pip install -r requirements.txt
 ```
+5.For future updates, just use:
 
+git add .
+git commit -m "Describe your update here"
+git push
 ---
 
 ## 🤝 Contribution Guidelines
