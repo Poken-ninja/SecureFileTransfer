@@ -1,0 +1,73 @@
+# 👋 Welcome to the SecureFileTransfer Developer Onboarding Repo
+
+This repository is designed to help new contributors and teammates quickly understand, set up, and work with the `SecureFileTransfer` project.
+
+---
+
+## 📦 What's Inside This Repo
+
+| File                   | Purpose                                                             |
+| ---------------------- | ------------------------------------------------------------------- |
+| `README.md`            | Overview of this onboarding repo.                                   |
+| `setup_guide.md`       | Step-by-step setup guide to clone, run, and test the main project.  |
+| `requirements.txt`     | The same library list used in the main repo.                        |
+| `.gitignore`           | Lists files and folders to ignore (like `venv/`, `.vscode/`, etc.). |
+| `project_structure.md` | A snapshot of the folder/file layout of the main project.           |
+| `troubleshooting.md`   | Common issues teammates may run into (and how to fix them).         |
+
+---
+
+## 📁 Related Project
+
+> This repo supports the main project: [SecureFileTransfer](https://github.com/Poken-ninja/SecureFileTransfer)
+
+It contains scripts that:
+
+* Encrypt and decrypt files using AES (and later RSA)
+* Work in batch mode for multiple files
+* Include logging and backup features
+
+---
+
+## ⚙️ Basic Setup (Quick Glance)
+
+> For full steps, read `setup_guide.md`
+
+```bash
+# 1. Clone the main repo
+https://github.com/Poken-ninja/SecureFileTransfer.git
+cd SecureFileTransfer
+
+# 2. Create virtual environment
+python -m venv venv
+
+# 3. Activate venv
+# Windows
+.\venv\Scripts\activate
+# macOS/Linux
+source venv/bin/activate
+
+# 4. Install required packages
+pip install -r requirements.txt
+```
+
+---
+
+## 🤝 Contribution Guidelines
+
+* Always use the virtual environment
+* Never commit `.pyc`, `venv/`, or `.idea/` folders
+* Update `requirements.txt` if you add any new libraries:
+
+  ```bash
+  pip freeze > requirements.txt
+  ```
+
+---
+
+## ❓ Need Help?
+
+* Check `troubleshooting.md` for common issues
+* Or ask in the group chat!
+
+You're all set to contribute. Happy encrypting! 🔐💻
